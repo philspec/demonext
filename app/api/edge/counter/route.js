@@ -1,4 +1,4 @@
-export const runtime = 'edge'
+export const runtime = 'node'
 
 let counter = 0
 
