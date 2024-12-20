@@ -1,22 +1,6 @@
-
-
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
 
 export default function Home() {
-  const [productId, setProductId] = useState('')
-
-  useEffect(() => {
-    console.log('Home page opened')
-  }, [])
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (productId) {
-      window.location.href = `/products/${productId}`
-    }
-  }
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8 gap-8">
       <h1 className="text-4xl font-bold">Welcome to Demo Next</h1>

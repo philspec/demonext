@@ -1,16 +1,7 @@
-
-
 import Link from 'next/link'
-import { useParams } from 'next/navigation'
-import { useEffect } from 'react'
 
-export default function Product() {
-  const params = useParams()
+export default function Product({ params }) {
   const productId = params.id
-
-  useEffect(() => {
-    console.log(`Product page opened for product #${productId}`)
-  }, [productId])
 
   return (
     <div className="min-h-screen p-8">
